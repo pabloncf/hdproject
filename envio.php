@@ -12,7 +12,8 @@ $query = "INSERT INTO users (nome, email, cpf, telefone) values ('$envio_nome','
 mysqli_query($conn,$query);
 
 if($query){
-    echo "salvo com sucesso";
+    echo "<br>------------------";
+    echo "<br>salvo com sucesso";
 }
 else{
     echo "Ocorreu um erro";

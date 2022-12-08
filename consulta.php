@@ -14,12 +14,8 @@ else{
 }
 
 while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
-    echo "ID: {$row['id']} <br>".
-    "Name: {$row['nome']} <br>".
-    "Email: {$row['email']} <br>".
-    "CPF: {$row['cpf']} <br>".
-    "Telefone: {$row['telefone']} <br>".
-    "----------------------------<br>";
+    echo "<br>-------------------------<br>";
+    print_r(json_encode($row));
 }
 
 ?>
